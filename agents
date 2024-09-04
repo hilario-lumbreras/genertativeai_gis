@@ -1,0 +1,38 @@
+
+## Agents
+
+In addition to **PromptFlow**, **LangChain**, and **Semantic Kernel**, there are a few more important concepts and tools you may want to be aware of. These include **agents** and other tools that are shaping how generative AI is applied in workflows and real-world applications.
+
+---
+
+### 1. **Agents in Generative AI**
+Agents are specialized components within generative AI frameworks that can take actions based on outputs from language models. They represent a more interactive and autonomous way of using AI to complete tasks, bridging the gap between simple generation and complex decision-making.
+
+#### Key Features of Agents:
+- **Autonomous Actions**: Agents can be designed to make decisions or trigger actions based on AI-generated outputs. For example, an agent could monitor data changes and execute actions like sending alerts, updating databases, or generating reports.
+- **Multi-Step Processes**: Similar to how LangChain chains tasks, agents can follow workflows, making decisions at each step.
+- **Context Retention**: Agents often remember prior interactions, allowing them to perform tasks in a more informed manner by referencing previous steps.
+
+#### Use Case Example:
+In GIS, agents could be used to automate processes like data cleaning, report generation, or monitoring real-time environmental changes. For instance, an agent might detect changes in satellite imagery, classify those changes (e.g., deforestation or urban growth), and then generate a report.
+
+#### Why Agents Matter:
+Agents make AI more **proactive** rather than reactive. They can make decisions and autonomously perform tasks without continuous human intervention, making them ideal for handling long-running, repetitive workflows or tasks that require responsiveness to real-world events.
+
+
+#### a. **OpenAI Plugins and API Integrations**
+OpenAI has begun integrating plugins that allow models to interact with the broader internet, databases, and APIs. These plugins enable AI models to retrieve real-time information, query databases, and interact with third-party services. This expands the model’s ability to operate in real-time and access information beyond its training data.
+
+- **Use Case**: In a GIS setting, an AI model could pull the latest satellite imagery or real-time traffic data from an API and integrate it into its responses or analysis.
+
+#### b. **Vector Databases (e.g., Pinecone, Weaviate)**
+Vector databases store and search embeddings—numerical representations of data that AI models use to understand and generate content. These databases are often used in **RAG** systems to quickly retrieve contextually similar information based on user queries.
+
+- **Use Case**: If you're working with geospatial data, a vector database can help you retrieve similar geographic features or patterns by querying geospatial embeddings, making it easier to find related data points or similar regions.
+
+#### c. **Few-Shot and Zero-Shot Learning**
+These techniques allow AI models to generalize tasks they’ve never been explicitly trained on:
+- **Few-Shot Learning**: The model learns from a small set of examples and applies that knowledge to new scenarios.
+- **Zero-Shot Learning**: The model can perform tasks with no specific training data but based on related information in its training set.
+
+- **Use Case**: In GIS, few-shot or zero-shot learning might allow AI models to classify land cover types in regions where there’s little or no labeled data, relying on patterns from other areas.
